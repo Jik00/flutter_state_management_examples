@@ -14,7 +14,6 @@ final class TaskInitial extends TaskCubitState {
   TaskInitial() : super(tasksList: []);
 }
 
-final class TaskUpdated extends TaskCubitState {
-  const TaskUpdated({required super.tasksList});
+final class UpdateTask extends TaskCubitState {
+  const UpdateTask({required super.tasksList});
 }
-
