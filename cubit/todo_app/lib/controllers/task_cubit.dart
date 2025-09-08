@@ -1,4 +1,3 @@
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todo_app/controllers/task_cubit_state.dart';
 import 'package:todo_app/models/task_model.dart';
@@ -28,6 +27,7 @@ class TaskCubit extends Cubit<TaskCubitState> {
       }
       return task;
     }).toList();
+    
     emit(UpdateTask(tasksList: updatedList));
   }
 }

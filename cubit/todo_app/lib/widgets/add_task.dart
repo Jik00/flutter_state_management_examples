@@ -25,6 +25,7 @@ class AddTaskWidget extends StatelessWidget {
         ),
         ElevatedButton(
           onPressed: () {
+            // do nothing if the text field is empty
             if (controller.text.isEmpty) {
               return;
             }
